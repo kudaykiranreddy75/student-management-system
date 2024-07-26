@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=text], select {
+          width: 350px;
+          margin: 2px ;
+          padding: 12px 20px;
+          border: 2px solid #0c0d0e;
+          border-radius: 10px;
+          box-sizing: border-box;
+        }
+
+        input[type=date], select {
+          width: 350px;
+          padding: 12px 20px;
+          margin:2px;
+          display: inline-block;
+          border: 2px solid #080707;
+          border-radius: 10px;
+          box-sizing: border-box;
+        }
+
+        input[type=email], select {
+          width: 350px;
+          margin:2px;
+          padding: 12px 20px;
+          display: inline-block;
+          border: 2px solid #0b0b0b;
+          border-radius: 10px;
+          box-sizing: border-box;
+        } 
+
+        input[type=number], select {
+          width: 350px;
+          padding: 12px 20px;
+          margin:2px;
+          display: inline-block;
+          border: 2px solid #070707;
+          border-radius: 10px;
+          box-sizing: border-box;
+        }
+
+           input[type=option], select {
+          width: 350px;
+          padding: 12px 20px;
+          margin:2px;
+          display: inline-block ;
+          border: 2px solid #070606;
+          border-radius: 10px;
+          box-sizing: border-box;
+        }
+        input[type=submit] {
+      
+          background-color: #1a43bf;
+          color: rgb(255, 255, 255);
+          padding: 15px 100px;
+          margin: 8px 0;
+          border: none;
+          margin-left: 200px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        textarea{
+          width: 350px;
+          margin: 2px 185px;
+          padding: 12px 20px;
+          display: inline-block;
+          border: 2px solid #070707;
+          border-radius: 10px;
+          box-sizing: border-box;
+
+        }
+      
+        button{
+            width: 80px;
+          background-color: #1A43BF;
+          color: white;
+          padding: 14px 20px;
+          margin: 5px 20px;
+          border: none;
+         
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #1a43bf;
+        }
+        b{
+          font: 18px Arial, sans-serif;
+          color: black;
+        }
+        label{
+          font: 21px Arial, sans-serif;
+
+          width: 180px;
+          display: inline-block;
+        }
+        
+        div {
+        width: 600px;
+        background:#1AA7EC; 
+
+          border-radius: 10px;
+          margin: auto;
+          padding: 10px 50px;
+          border: 7px solid #1A43BF;
+          align-items: center;
+        }
+        div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+         border: 1px solid black;
+        opacity: 0.1;
+        }
+
+.btn-warning input[type="file"]{
+  cursor: pointer;
+  position:absolute;
+  left: 0px;
+  top: 0px;
+transform:  scale(3);
+opacity: 0;
+}
+
+
+body {margin:0;}
+body {  background-color:#1AA7EC;
+
+background-size: 100% 100%;
+}
+div.transbox label{
+  margin: 5%;
+  font-weight: bolder;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color:#1A43BF;
+  position: fixed;
+  top: px;
+  width: 100%;
+ 
+}
+
+
+.b1{
+  padding-left: 20px;
+  color: rgb(248, 246, 242);
+   font: 30px Arial, sans-serif;
+   text-align: center;
+   line-height: 60px;
+}
+
+h3{   
+  
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+
+        </style>
+    <head></head>
+   
+    <body>
+     
+      <ul>
+      
+       <b class="b1">KSSEM ECE</b>
+       
+     </ul><br><br><br><br><br><br>
+        
+<div>
+    <form action=""method="POST" name="data-form">
+        <h3>Student personal details</h3><hr>
+        <label>Name:</label>
+        <input type="text"  name="Name" placeholder="Name" required>
+        
+    <label>Upload photo:</label>
+            <input type="file" name="photo" class="upload" required >
+          </button><br><br>
+          
+          <label>USN :</label>
+        <input type="text" name="USN" placeholder="USN" required><br>
+        <label>CET Rank:</label>
+        <input type="number" name="CET_Rank" placeholder="Rank" required><br>
+        <label>ComedK Rank:</label>
+        <input type="number" name="ComedK" placeholder="Rank" required><br>
+    
+        <label>Date of Birth :</label>
+        <input type="date" name="DOB"  required><br>
+    
+        <label>Aadhaar Number:</label>
+        <input type="number" name="AadhaarNumber"  placeholder="5678-1234-5674" required><br>
+       
+
+      <label>Gender  :</label>
+    
+    <b>Male</b>
+   <input type="radio" id="Gender" name="Gender" value="Male">
+   <b>Female</b>
+   <input type="radio" id="Gender" name="Gender" value="Female">
+   <b>Others</b>
+   <input type="radio" id="Gender" name="Gender" value="Others"><br><br>
+
+   <label>Day scholar:</label>
+   <b>YES</b>
+   <input type="radio" id="Day scholar/Hosteller" name="Dayscholar/Hosteller" value="Day scholar">
+   <b>NO</b>
+     <input type="radio" id="Day scholar/Hosteller" name="Dayscholar/Hosteller" value="Hosteller"><br>
+
+ <label for="Department">Choose Branch:</label>
+   <select name="branch" id="branch">
+     <option value="Not selected">select Department</option>
+     <option value="ECE" name="branch">Electronics and communication engg</option>
+     <option value="CSE" name="branch">Computer science and engg</option>
+     <option value="ME" name="branch">Mechanical engg</option>
+     <option value="AT" name="branch">Automobile engg</option>
+ 
+   </select><br>
+<h4>STUDENT CONTACT DETAILS</h4><hr>
+   <label for="Address">Address:</label>
+    <textarea class="adbox" name="Present-Address"placeholder="Enter present Address..." required></textarea>
+    
+      <textarea class="adbox" name="Permenent-Address" placeholder="Enter permenent Address..." required></textarea><br>
+
+      <label>Mobile Number:</label>
+      <input type="number" name="Mobilenumber"  placeholder="9148******" required><br>
+      <label>Email:</label>
+      <input type="email"name="Email" placeholder="email-id"  required><br>
+  
+      <input type="submit" value="Submit">
+    </form>
+
+</div><br><br><br>
+
+<script src="stu_java.js"></script>
+    </body>
+    
+</html>
